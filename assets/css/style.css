@@ -1,0 +1,36 @@
+:root {
+  --black: #0a0a0a;
+  --gray-900: #121212;
+  --gray-700: #1e1e1e;
+  --gray-500: #262626;
+  --gray-400: #787878;
+  --gray-300: #a1a1a1;
+  --gray-100: #f2f2f2;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  font-size: 1.6rem;
+  cursor: pointer;
+  border: 0;
+}
