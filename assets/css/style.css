@@ -276,3 +276,91 @@ img.detail-logo {
   top: 0;
   right: 0;
 }
+
+#plans {
+  padding: 10.8rem 0;
+
+  background-color: var(--gray-900);
+  color: #eeee;
+}
+
+.plans-cards {
+  margin-top: 7rem;
+  padding-top: 0.8rem;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 34rem 34rem 34rem;
+  place-content: center;
+  gap: 4rem;
+}
+
+.plans-card {
+  height: 100%;
+  background-color: var(--gray-700);
+}
+
+.plans-card .header {
+  padding: 2.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #eee;
+}
+
+.plans-card .icon {
+  padding: 1rem;
+  border: 1px solid #090808;
+}
+
+.plans-card .value {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.plans-card .header h3 {
+  color: #0f0f0f;
+}
+.plans-card .header span {
+  font-weight: 600;
+  color: #7a7a7a;
+}
+
+.plans-card .content {
+  height: 27rem;
+  padding: 2rem 3rem;
+}
+
+.plans-card h3 {
+  font-size: 2.4rem;
+}
+
+.plans-card ul {
+  margin-top: 2.4rem;
+  list-style-type: square;
+  list-style-position: inside;
+  font-size: 1.4rem;
+}
+
+.plans-card ul li span {
+  position: relative;
+  left: -1rem;
+}
+
+.plans-card button {
+  padding: 1rem 5rem;
+
+  background-color: var(--white);
+
+  position: relative;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.plans-card button a {
+  font-weight: 600;
+}
