@@ -266,7 +266,6 @@ header a {
   font-weight: 500;
   color: var(--gray-300);
 }
-
 img.detail-logo {
   display: block;
   height: 100%;
@@ -330,7 +329,7 @@ img.detail-logo {
 }
 
 .plans-card .content {
-  height: 27rem;
+  height: 30rem;
   padding: 2rem 3rem;
 }
 
@@ -343,6 +342,10 @@ img.detail-logo {
   list-style-type: square;
   list-style-position: inside;
   font-size: 1.4rem;
+}
+
+.plans-card ul li {
+  margin-top: 1rem;
 }
 
 .plans-card ul li span {
@@ -363,4 +366,181 @@ img.detail-logo {
 
 .plans-card button a {
   font-weight: 600;
+}
+
+@media (max-width: 1250px) {
+  .hero-model img {
+    right: -150px;
+  }
+
+  .plans-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 2rem 0;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  #hero .hero-model img {
+    height: 40rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #hero .hero-shadow {
+    background: linear-gradient(
+      180deg,
+      rgba(91, 91, 91, 0) 0%,
+      #181818 60%,
+      rgba(24, 24, 24, 1) 100%
+    );
+  }
+
+  #hero {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .infos-container {
+    max-width: auto;
+    margin: 30rem auto 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .infos-container h1 {
+    font-size: 3rem;
+  }
+
+  .infos-container p {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .infos-container button {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .infos-container button a {
+    font-size: 1.2rem;
+  }
+
+  .customers-images img {
+    width: 30%;
+    max-width: 4rem;
+  }
+
+  .costumers span {
+    margin-left: -3rem;
+    font-size: 0.8rem;
+  }
+
+  .benefits-cards {
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  #how-it-works p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .benefits-card .icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-bottom: -2.25rem;
+    margin-left: 1.6rem;
+  }
+
+  .benefits-card .icon span {
+    font-size: 2rem;
+  }
+
+  .benefits-card .text {
+    max-width: 22rem;
+    height: 17rem;
+    padding: 4.5rem 3rem 3rem 1.6rem;
+  }
+
+  .benefits-card .text strong {
+    font-size: 1.5rem;
+  }
+
+  .benefits-card .text span {
+    margin-top: 1rem;
+
+    font-size: 1.2rem;
+  }
+
+  img.detail-logo {
+    display: none;
+  }
+
+  #plans {
+    padding: 3.2rem 0;
+  }
+
+  .plans-cards {
+    margin-top: 3.6rem;
+    grid-template-columns: 22rem;
+  }
+
+  .plans-card .header {
+    padding: 1.6rem;
+  }
+
+  .plans-card .icon {
+    padding: 1rem;
+    border: 1px solid #090808;
+  }
+
+  .plans-card .icon img {
+    width: 3rem;
+  }
+
+  .plans-card .header h3 {
+    font-size: 2.4rem;
+  }
+  .plans-card .header span {
+    font-size: 1rem;
+  }
+
+  .plans-card .content {
+    height: 24rem;
+    padding: 2rem 3rem;
+  }
+
+  .plans-card h3 {
+    font-size: 1.6rem;
+  }
+
+  .plans-card ul {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .plans-card button {
+    top: 1.85rem;
+    padding: 1rem 2rem;
+  }
+
+  .plans-card button a {
+    font-size: 1rem;
+  }
 }
