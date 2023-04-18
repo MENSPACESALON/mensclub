@@ -17,6 +17,8 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-color: #ededed;
 }
 
 body {
@@ -368,6 +370,67 @@ img.detail-logo {
   font-weight: 600;
 }
 
+#testimonials {
+  margin-top: 6.4rem;
+}
+
+.testimonials-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonials-header .texts {
+  text-transform: uppercase;
+}
+
+.testimonials-header .texts h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #898989;
+}
+
+.testimonials-header img {
+  margin-right: -130px;
+}
+
+.testimonials-slider {
+  padding: 6rem;
+}
+
+.flickity-page-dots {
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slide-cell {
+  width: 29rem;
+  height: 35rem;
+  margin: 0 1.6rem;
+  padding: 2.8rem 1.2rem;
+
+  border: 1px solid #121212;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slide-cell .profile-avaliation {
+  margin-bottom: 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.slide-cell p {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
 @media (max-width: 1250px) {
   .hero-model img {
     right: -150px;
@@ -393,9 +456,11 @@ img.detail-logo {
   }
 
   #hero .hero-model img {
+    max-width: 100%;
     height: 40rem;
     left: 50%;
     transform: translateX(-50%);
+    object-fit: cover;
   }
 
   #hero .hero-shadow {
@@ -542,5 +607,31 @@ img.detail-logo {
 
   .plans-card button a {
     font-size: 1rem;
+  }
+
+  .testimonials-header .texts h4 {
+    font-size: 1.2rem;
+  }
+
+  .testimonials-header img {
+    display: none;
+  }
+
+  .slide-cell {
+    width: 22rem;
+    height: 32rem;
+  }
+
+  .slide-cell .profile-avaliation:first-child {
+    width: 6rem;
+  }
+
+  .slide-cell .profile-avaliation strong {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .slide-cell p {
+    font-size: 0.9rem;
   }
 }
