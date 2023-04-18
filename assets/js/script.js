@@ -4,6 +4,5 @@ const flkty = new Flickity(testimonialsSlider, {
   cellAlign: "center",
   contain: true,
   groupCells: "80%",
-  wrapAround: true,
-  autoPlay: 1500,
+  autoPlay: 2500,
 });
