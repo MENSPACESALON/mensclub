@@ -396,6 +396,7 @@ img.detail-logo {
 
 .testimonials-slider {
   padding: 6rem;
+  margin-bottom: 6rem;
 }
 
 .flickity-page-dots {
@@ -429,6 +430,90 @@ img.detail-logo {
 .slide-cell p {
   font-size: 1.4rem;
   text-align: center;
+}
+
+#contact {
+  height: 100%;
+  background-color: var(--gray-900);
+  color: #eeee;
+}
+
+#contact .container {
+  display: flex;
+  gap: 8rem;
+}
+
+#contact .texts {
+  padding-top: 12rem;
+}
+
+#contact .texts p {
+  max-width: 61.9rem;
+  margin: 2.4rem 0 5rem;
+
+  font-size: 2rem;
+}
+
+#contact .texts button {
+  padding: 1rem 3rem;
+  margin-bottom: 12rem;
+
+  background-color: var(--white);
+  text-align: center;
+}
+
+#contact .texts button a {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.informations {
+  min-height: 100%;
+  padding: 9rem 4rem;
+  background-color: #222222;
+}
+
+.informations h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.informations .line {
+  width: 100%;
+  height: 2px;
+  margin: 2rem 0;
+
+  background-color: #2c2c2c;
+}
+
+.informations .info {
+  margin-bottom: 4rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+
+  color: #ededed;
+  font-weight: 500;
+}
+
+.informations .links {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+footer {
+  padding: 3rem 0;
+  background-color: #030303;
+  color: #9c9c9c;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media (max-width: 1250px) {
@@ -558,7 +643,7 @@ img.detail-logo {
   }
 
   #plans {
-    padding: 3.2rem 0;
+    padding: 3.2rem 0 6rem;
   }
 
   .plans-cards {
@@ -638,6 +723,66 @@ img.detail-logo {
 
   .flickity-button {
     display: none;
+  }
+
+  #contact .container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #contact .texts {
+    padding-top: 6rem;
+  }
+
+  #contact .texts p {
+    font-size: 1.2rem;
+    margin: 3rem 0;
+  }
+
+  #contact .texts button {
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #contact .texts button a {
+    font-size: 1rem;
+  }
+
+  #contact .informations {
+    padding: 2rem 0;
+    background-color: transparent;
+  }
+
+  #contact .informations h3 {
+    font-size: 2rem;
+  }
+
+  #contact .informations .info {
+    margin-bottom: 2.5rem;
+  }
+
+  #contact .informations .info img {
+    width: 1.8rem;
+  }
+
+  #contact .informations .info p {
+    font-size: 1.2rem;
+  }
+
+  #contact .informations .links {
+    margin-bottom: 4rem;
+  }
+
+  #contact .informations .links img {
+    width: 1.8rem;
+  }
+
+  footer img {
+    width: 7.4rem;
+  }
+
+  footer span {
+    font-size: 1rem;
   }
 }
 
