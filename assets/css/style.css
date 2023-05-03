@@ -125,6 +125,7 @@ header a {
   top: 0;
   right: -50px;
   z-index: 0;
+  object-fit: cover;
 }
 
 #hero .container {
@@ -153,14 +154,21 @@ header a {
 .infos-container button {
   width: 75%;
   margin-top: 4rem;
-  padding: 1.5rem 0;
 
   background-color: #050505;
 }
 
 .infos-container button a {
+  width: 100%;
+  padding: 1.5rem 0;
+
+  display: block;
+
+  background-color: #050505;
   color: var(--white);
+
   font-size: 2rem;
+  text-transform: uppercase;
   font-weight: 600;
 }
 
@@ -363,8 +371,6 @@ img.detail-logo {
 }
 
 .plans-card button {
-  padding: 1rem 5rem;
-
   background-color: var(--white);
 
   position: relative;
@@ -374,7 +380,12 @@ img.detail-logo {
 }
 
 .plans-card button a {
+  padding: 1rem 5rem;
+  background-color: var(--white);
+
   font-weight: 600;
+  width: 100%;
+  height: 100%;
 }
 
 #testimonials {
@@ -462,7 +473,7 @@ img.detail-logo {
 }
 
 #contact .texts button {
-  padding: 1rem 3rem;
+  padding: 0.8rem 3rem;
   margin-bottom: 12rem;
 
   background-color: var(--white);
@@ -470,6 +481,10 @@ img.detail-logo {
 }
 
 #contact .texts button a {
+  padding: 0.8rem 3rem;
+
+  display: block;
+
   font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -523,6 +538,28 @@ footer .container {
   justify-content: space-between;
 }
 
+[data-anime] {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+[data-anime="top"] {
+  transform: translate3d(0, -100px, 0);
+}
+
+[data-anime="left"] {
+  transform: translate3d(-100px, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(100px, 0, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
 @media (max-width: 1250px) {
   .hero-model img {
     right: -150px;
@@ -538,6 +575,8 @@ footer .container {
   header {
     padding: 2rem 0;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 4;
   }
 
@@ -613,9 +652,6 @@ footer .container {
   }
 
   header nav ul li {
-    margin: 0 2rem;
-    padding: 2rem 6rem;
-
     font-size: 3rem;
     border-bottom: 1px solid var(--gray-900);
 
@@ -624,6 +660,14 @@ footer .container {
 
   header nav ul li:hover {
     background-color: var(--gray-900);
+  }
+
+  header nav ul li a {
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 6rem;
+
+    display: inline-block;
   }
 
   h2 {
@@ -639,7 +683,6 @@ footer .container {
     height: 40rem;
     left: 50%;
     transform: translateX(-50%);
-    object-fit: cover;
   }
 
   #hero .hero-shadow {
@@ -677,10 +720,11 @@ footer .container {
 
   .infos-container button {
     width: 100%;
-    padding: 1rem 0;
   }
 
   .infos-container button a {
+    width: 100%;
+    padding: 1.5rem 0;
     font-size: 1.2rem;
   }
 
@@ -743,6 +787,7 @@ footer .container {
   .plans-cards {
     margin-top: 3.6rem;
     grid-template-columns: 22rem;
+    gap: 8rem;
   }
 
   .plans-card .header {
@@ -785,7 +830,8 @@ footer .container {
   }
 
   .plans-card button a {
-    font-size: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
   }
 
   .testimonials-header .texts h4 {
@@ -834,12 +880,13 @@ footer .container {
   }
 
   #contact .texts button {
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     margin-bottom: 2rem;
   }
 
   #contact .texts button a {
-    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
   }
 
   #contact .informations {
@@ -895,6 +942,12 @@ footer .container {
 
 @media (max-width: 625px) {
   #hero {
-    height: 125vh;
+    height: 105vh;
+  }
+}
+
+@media (max-width: 280px) {
+  #hero {
+    height: 115vh;
   }
 }
