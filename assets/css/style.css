@@ -934,20 +934,30 @@ footer .container {
   }
 }
 
-@media (max-width: 325px) {
-  #hero {
-    height: 145vh;
-  }
-}
-
 @media (max-width: 625px) {
   #hero {
-    height: 105vh;
+    height: 90vh;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 280px) {
   #hero {
     height: 115vh;
+  }
+}
+
+@media (max-width: 320px) {
+  #hero {
+    height: 135vh;
+  }
+}
+
+@media (min-width: 400px) {
+  #hero {
+    height: 75vh;
   }
 }
