@@ -935,28 +935,18 @@ footer .container {
 }
 
 @media (max-width: 625px) {
-  #hero {
-    height: 90vh;
-  }
-
   #hero h1 {
     font-size: 2rem;
   }
 }
 
-@media (max-width: 280px) {
+@media (min-height: 300px) and (max-height: 620px) and (max-width: 800px) {
   #hero {
-    height: 115vh;
+    height: 125vh;
   }
 }
 
-@media (max-width: 320px) {
-  #hero {
-    height: 135vh;
-  }
-}
-
-@media (min-width: 400px) and (max-width: 500px) {
+@media (min-height: 680px) and (max-height: 1000px) and (max-width: 800px) {
   #hero {
     height: 84vh;
   }
