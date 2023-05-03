@@ -956,8 +956,8 @@ footer .container {
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 400px) and (max-width: 500px) {
   #hero {
-    height: 75vh;
+    height: 84vh;
   }
 }
