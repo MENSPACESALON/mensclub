@@ -573,11 +573,12 @@ footer .container {
 
 @media (max-width: 1024px) {
   header {
+    width: 100%;
     padding: 2rem 0;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 4;
+    z-index: 100;
   }
 
   header img {
@@ -691,6 +692,7 @@ footer .container {
   #hero .hero-model img {
     max-width: 100%;
     min-height: 35rem;
+    max-height: 35rem;
 
     position: inherit;
   }
@@ -927,30 +929,57 @@ footer .container {
   }
 
   footer span {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
 @media (min-width: 570px) and (max-width: 760px) {
   #hero {
-    height: 125vh;
+    height: 100vh;
+  }
+
+  #hero .hero-model img {
+    max-height: 50rem;
+  }
+
+  #hero .infos-container {
+    margin-top: -150px;
   }
 }
 
 @media (min-width: 760px) and (max-width: 860px) {
   #hero {
-    height: 140vh;
+    height: 70vh;
+  }
+
+  #hero .hero-model img {
+    max-height: 50rem;
+  }
+
+  #hero .infos-container {
+    margin-top: -150px;
   }
 }
 
-@media (min-width: 860px) and (max-width: 920px) {
+@media (min-width: 860px) and (max-width: 1024px) {
   #hero {
-    height: 150vh;
+    height: 60vh;
   }
-}
 
-@media (min-width: 920px) and (max-width: 1024px) {
-  #hero {
-    height: 160vh;
+  #hero .hero-model img {
+    max-height: 80rem;
+  }
+
+  #hero .infos-container {
+    margin-top: -200px;
+  }
+
+  #hero .hero-shadow {
+    background: linear-gradient(
+      180deg,
+      rgba(91, 91, 91, 0) 0%,
+      #181818 65%,
+      rgba(24, 24, 24, 1) 100%
+    );
   }
 }
