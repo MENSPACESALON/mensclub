@@ -367,7 +367,7 @@ img.detail-logo {
 
 .plans-card ul li span {
   position: relative;
-  left: -1rem;
+  left: -0.5rem;
 }
 
 .plans-card button {
