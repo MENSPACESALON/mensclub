@@ -318,6 +318,7 @@ img.detail-logo {
 
 .plans-card .header {
   padding: 2.5rem;
+  height: 12.1rem;
 
   display: flex;
   align-items: center;
@@ -346,7 +347,6 @@ img.detail-logo {
 }
 
 .plans-card .content {
-  height: 30rem;
   padding: 2rem 3rem;
 }
 
@@ -355,6 +355,8 @@ img.detail-logo {
 }
 
 .plans-card ul {
+  height: 24rem;
+
   margin-top: 2.4rem;
   list-style-type: square;
   list-style-position: inside;
@@ -367,14 +369,14 @@ img.detail-logo {
 
 .plans-card ul li span {
   position: relative;
-  left: -0.5rem;
+  left: -1rem;
 }
 
 .plans-card button {
   background-color: var(--white);
 
   position: relative;
-  top: 2rem;
+  bottom: -8px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -797,6 +799,8 @@ footer .container {
   }
 
   .plans-card .header {
+    height: 10rem;
+
     padding: 1.6rem;
   }
 
@@ -817,7 +821,7 @@ footer .container {
   }
 
   .plans-card .content {
-    height: 24rem;
+    height: 25rem;
     padding: 2rem 3rem;
   }
 
@@ -826,6 +830,7 @@ footer .container {
   }
 
   .plans-card ul {
+    height: 24rem;
     margin-top: 1.5rem;
     font-size: 1rem;
   }
