@@ -579,7 +579,7 @@ footer .container {
 
 @media (max-width: 1024px) {
   header {
-    width: 100%;
+    width: 100vw;
     padding: 2rem 0;
     position: fixed;
     top: 0;
@@ -641,7 +641,7 @@ footer .container {
   }
 
   header nav ul {
-    width: 100%;
+    width: 100vw;
 
     display: block;
     height: 0;
