@@ -317,8 +317,8 @@ img.detail-logo {
 }
 
 .plans-card .header {
+  height: 12rem;
   padding: 2.5rem;
-  height: 12.1rem;
 
   display: flex;
   align-items: center;
@@ -328,8 +328,13 @@ img.detail-logo {
 }
 
 .plans-card .icon {
-  padding: 1rem;
+  padding: 0.8rem 1rem;
   border: 1px solid #090808;
+}
+
+.plans-card .icon img {
+  width: 5rem;
+  height: 5rem;
 }
 
 .plans-card .value {
@@ -347,6 +352,7 @@ img.detail-logo {
 }
 
 .plans-card .content {
+  height: 32rem;
   padding: 2rem 3rem;
 }
 
@@ -355,8 +361,6 @@ img.detail-logo {
 }
 
 .plans-card ul {
-  height: 24rem;
-
   margin-top: 2.4rem;
   list-style-type: square;
   list-style-position: inside;
@@ -369,14 +373,14 @@ img.detail-logo {
 
 .plans-card ul li span {
   position: relative;
-  left: -1rem;
+  left: -0.5rem;
 }
 
 .plans-card button {
   background-color: var(--white);
 
   position: relative;
-  bottom: -8px;
+  top: 0.8rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -799,18 +803,17 @@ footer .container {
   }
 
   .plans-card .header {
-    height: 10rem;
-
     padding: 1.6rem;
   }
 
   .plans-card .icon {
-    padding: 1rem;
+    padding: 0.8rem 1rem;
     border: 1px solid #090808;
   }
 
   .plans-card .icon img {
     width: 3rem;
+    height: 3rem;
   }
 
   .plans-card .header h3 {
@@ -821,7 +824,7 @@ footer .container {
   }
 
   .plans-card .content {
-    height: 25rem;
+    height: 24rem;
     padding: 2rem 3rem;
   }
 
@@ -830,7 +833,6 @@ footer .container {
   }
 
   .plans-card ul {
-    height: 24rem;
     margin-top: 1.5rem;
     font-size: 1rem;
   }
